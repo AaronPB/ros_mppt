@@ -8,7 +8,7 @@
   <license>GNU GPL v3.0</license>
 
   <url type="website">https://github.com/AaronPB</url>
-  <author>Aaron PV</author>
+  <author>Aaron PB</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
