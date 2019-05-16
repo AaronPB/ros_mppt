@@ -3,7 +3,7 @@
 
   <name>ros_mppt</name>
   <version>0.0.0</version>
-  <description>ROS package for MPPT data</description>
+  <description>MPPT message sender package</description>
   <maintainer email="aaronpb@todo.todo">aaronpb</maintainer>
   <license>GNU GPL v3.0</license>
 
@@ -14,10 +14,12 @@
 
   <build_depend>message_generation</build_depend>
   <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
 
   <exec_depend>message_runtime</exec_depend>
   <exec_depend>rospy</exec_depend>
 
   <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
 
 </package>
