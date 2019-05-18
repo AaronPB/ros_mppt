@@ -41,3 +41,17 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 )
+
+#############
+## Install ##
+#############
+
+## Mark executable scripts for installation
+install(PROGRAMS
+  scripts/vemppt_ros.py
+  DESTINATION ${CATKIN_PACKAGE_PYTHON_DESTINATION}
+)
+
+#############
+## Testing ##
+#############
