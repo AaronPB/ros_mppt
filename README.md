@@ -20,8 +20,9 @@ Run roscore and vemppt_ros.py
 
 ## Documentation
 ### MPPT ROS WIKI
+In progress :)
 
- - Pending to be created
+ - [[WIKI] ros_mppt](http://wiki.ros.org/ros_mppt)
 
 ### My other repositories for MPPT data management
 #### VE Direct MPPT data reader
@@ -31,8 +32,8 @@ Visit this repository if you are looking for a ve-direct protocol registration i
 
 ### VE.Direct Protocol Documentation
 
-  - [VE.Direct Protocol - Version 3.25](https://www.victronenergy.com.es/download-document/2036/ve.direct-protocol-3.25.pdf)
+  - [[PDF] VE.Direct Protocol - Version 3.25](https://www.victronenergy.com.es/download-document/2036/ve.direct-protocol-3.25.pdf)
 
-  - [BlueSolar HEX protocol MPPT](https://www.victronenergy.com.es/download-document/4459/bluesolar-hex-protocol-mppt.pdf)
+  - [[PDF] BlueSolar HEX protocol MPPT](https://www.victronenergy.com.es/download-document/4459/bluesolar-hex-protocol-mppt.pdf)
   
-  - [MPPT Solar Charger Error Codes](https://www.victronenergy.com/live/mppt-error-codes)
+  - [[WIKI] MPPT Solar Charger Error Codes](https://www.victronenergy.com/live/mppt-error-codes)
