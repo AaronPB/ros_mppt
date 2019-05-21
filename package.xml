@@ -7,7 +7,7 @@
   <maintainer email="aaronpb@todo.todo">aaronpb</maintainer>
   <license>GNU GPL v3.0</license>
 
-  <url type="website">https://github.com/AaronPB</url>
+  <url type="website">http://wiki.ros.org/ros_mppt</url>
   <author>Aaron PB</author>
 
   <buildtool_depend>catkin</buildtool_depend>
