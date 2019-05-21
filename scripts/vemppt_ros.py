@@ -34,7 +34,9 @@ def sender():
 
     while not rospy.is_shutdown():
 
-        ve_read = ser.readline().decode("utf-8")
+        try:
+            ve_read = ser.readline().decode("utf-8")
+        except: pass
 
         if "V" in ve_read and "P" not in ve_read:
             ve_read = ve_read.split("\t")
