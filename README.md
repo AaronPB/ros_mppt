@@ -37,3 +37,6 @@ Visit this repository if you are looking for a ve-direct protocol registration i
   - [[PDF] BlueSolar HEX protocol MPPT](https://www.victronenergy.com.es/download-document/4459/bluesolar-hex-protocol-mppt.pdf)
   
   - [[WIKI] MPPT Solar Charger Error Codes](https://www.victronenergy.com/live/mppt-error-codes)
+
+## License
+ros_mppt is licensed under the GNU General Public License v3.0, detailed in the [LICENSE](https://github.com/AaronPB/ros_mppt/blob/master/LICENSE) file.
