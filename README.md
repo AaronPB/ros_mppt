@@ -18,6 +18,29 @@ At the moment, it sends the most important data from the ve-direct protocol, whi
 
 Run roscore and vemppt_ros.py
 
+## Customize the sender packets
+Depending on the interested values from the serial communication interface, it is possible to define more values into the package.
+
+**MPPT valid values:**
+
+| Implemented | Label | Units | Description |
+| :---: | :---: | :---: | :--- |
+| ✓ | V | mV | Main (battery) voltage |
+| ✓ | I | mA | Battery current |
+| ✓ | VPV | mV | Panel voltage |
+| ✓ | PPV | W | Panel power |
+| - | PID | - | Product ID |
+| - | SER# | - | Serial Number |
+| - | HSDS | - | Day sequence number (0...364) |
+| - | MPPT | - | Tracker operation mode |
+| - | ERR | - | Error code |
+| - | CS | - | State of operation |
+| - | H19 | 0.01 kW/h | Yield Total (user resettable counter) |
+| - | H20 | 0.01 kW/h | Yield today |
+| - | H21 | W | Maximum power today |
+| - | H22 | 0.01 kW/h | Yield yesterday |
+| - | H23 | W | Maximum power yesterday |
+
 ## Documentation
 ### MPPT ROS WIKI
 In progress :)
