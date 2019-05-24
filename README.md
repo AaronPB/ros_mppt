@@ -55,11 +55,17 @@ Visit this repository if you are looking for a ve-direct protocol registration i
 
 ### VE.Direct Protocol Documentation
 
-  - [[PDF] VE.Direct Protocol - Version 3.25](https://www.victronenergy.com.es/download-document/2036/ve.direct-protocol-3.25.pdf)
+ - [[PDF] VE.Direct Protocol - Version 3.25](https://www.victronenergy.com.es/download-document/2036/ve.direct-protocol-3.25.pdf)
 
-  - [[PDF] BlueSolar HEX protocol MPPT](https://www.victronenergy.com.es/download-document/4459/bluesolar-hex-protocol-mppt.pdf)
+ - [[PDF] BlueSolar HEX protocol MPPT](https://www.victronenergy.com.es/download-document/4459/bluesolar-hex-protocol-mppt.pdf)
   
-  - [[WIKI] MPPT Solar Charger Error Codes](https://www.victronenergy.com/live/mppt-error-codes)
+ - [[WIKI] MPPT Solar Charger Error Codes](https://www.victronenergy.com/live/mppt-error-codes)
+  
+
+## TODO List
+ - [x] Custom ros messages sender
+ - [ ] Automatic USB port identification
+ - [ ] Disconnection handler with timeout requests
 
 ## License
 ros_mppt is licensed under the GNU General Public License v3.0, detailed in the [LICENSE](https://github.com/AaronPB/ros_mppt/blob/master/LICENSE) file.
