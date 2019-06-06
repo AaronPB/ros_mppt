@@ -1,4 +1,5 @@
 # MPPT ROS Package
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Build Status](http://build.ros.org/job/Kdev__ros_mppt__ubuntu_xenial_amd64/badge/icon)](http://build.ros.org/job/Kdev__ros_mppt__ubuntu_xenial_amd64/)
 
 ROS package for Victron Energy MPPT devices via VE-Direct Protocol from serial USB
