@@ -66,9 +66,10 @@ Visit this repository if you are looking for a ve-direct protocol registration i
   
 
 ## TODO List
- - [x] Custom ros messages sender
+ - [x] Custom ros messages sender (mppt topic)
  - [ ] Automatic USB port identification
  - [ ] Disconnection handler with timeout requests
+ - [ ] Log system
 
 ## License
 ros_mppt is licensed under the GNU General Public License v3.0, detailed in the [LICENSE](https://github.com/AaronPB/ros_mppt/blob/master/LICENSE) file.
