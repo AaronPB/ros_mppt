@@ -18,7 +18,11 @@
 import rospy
 import time
 import serial
+import logging
 from ros_mppt.msg import mppt
+
+logging.basicConfig(level=logging.INFO, filename='ros_mppt.log', filemode='a', format='[%(asctime)s - %(levelname)s]: %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+logging.info('Initializing ros_mppt package...')
 
 def sender():
     pub = rospy.Publisher('mppt_channel', mppt, queue_size=10)
@@ -36,20 +40,28 @@ def sender():
 
         try:
             ve_read = ser.readline().decode("utf-8")
-        except: pass
+        except: logging.warning('Skipping decoding from ve_read line: ' + ve_read)
 
         if "V" in ve_read and "P" not in ve_read:
-            ve_read = ve_read.split("\t")
-            msg.v_bat = float(ve_read[1]) * 0.001
+            try:
+                ve_read = ve_read.split("\t")
+                msg.v_bat = float(ve_read[1]) * 0.001
+            except Exception as e: logging.error('Exception ocurred in V', exc_info=True)
         elif "I" in ve_read and "P" not in ve_read:
-            ve_read = ve_read.split("\t")
-            msg.i_bat = float(ve_read[1]) * 0.001
+            try:
+                ve_read = ve_read.split("\t")
+                msg.i_bat = float(ve_read[1]) * 0.001
+            except Exception as e: logging.error('Exception ocurred in I', exc_info=True)
         elif "VPV" in ve_read:
-            ve_read = ve_read.split("\t")
-            msg.v_pv = float(ve_read[1])
+            try
+                ve_read = ve_read.split("\t") * 0.001
+                msg.v_pv = float(ve_read[1])
+            except Exception as e: logging.error('Exception ocurred in VPV', exc_info=True)
         elif "PPV" in ve_read:
-            ve_read = ve_read.split("\t")
-            msg.p_pv = float(ve_read[1])
+            try:
+                ve_read = ve_read.split("\t")
+                msg.p_pv = float(ve_read[1])
+            except Exception as e: logging.error('Exception ocurred in PPV', exc_info=True)
 
         rospy.loginfo(msg)
         pub.publish(msg)
