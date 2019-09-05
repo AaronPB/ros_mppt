@@ -2,7 +2,7 @@
 <package format="2">
 
   <name>ros_mppt</name>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <description>MPPT message sender package</description>
   <maintainer email="aaronpb@todo.todo">aaronpb</maintainer>
   <license>GNU GPL v3.0</license>
