@@ -11,10 +11,11 @@ ROS package for Victron Energy MPPT devices via VE-Direct Protocol from serial U
 This repository is part of my end-of-degree project as mechanical engineer at University of Almería in Spain.
 The aim of this project is to install a PV system into an electric vehicle, creating a data sender from the MPPT device into the ros-system.
 
-## MPPT Connection
+## How it works
+### MPPT Connection
 This software is tested with a [VE.Direct to USB Interface cable](https://www.victronenergy.com.es/accessories/ve-direct-to-usb-interface)
 
-## How it works
+### Topic publisher
 At the moment, it sends the most important data from the ve-direct protocol, which are defined in mppt.msg:
 
  - Battery Voltage (v_bat) - float64
@@ -22,10 +23,24 @@ At the moment, it sends the most important data from the ve-direct protocol, whi
  - Solar Panels Voltage (v_pv) - float64
  - Solar Panel Power (p_pv) - float64
 
-Run roscore and vemppt_ros.py
+## Installing the package
+Install the package from the distro repo (kinetic)
+```sh
+
+sudo apt-get install ros-kinetic-ros_mppt
+
+```
+
+Or you can also clone the package from github repo into your catkin workspace and build as usual
+```sh
+
+$ git clone https://github.com/AaronPB/ros_mppt.git
+
+```
 
 ## Customize the sender packets
 Depending on the interested values from the serial communication interface, it is possible to define more values into the package.
+> Check the [ros_mppt documentation](http://wiki.ros.org/ros_mppt) to learn how to define more values.
 
 **MPPT valid values:**
 
@@ -49,13 +64,12 @@ Depending on the interested values from the serial communication interface, it i
 
 ## Documentation
 ### MPPT ROS WIKI
-In progress :)
 
  - [[WIKI] ros_mppt](http://wiki.ros.org/ros_mppt)
 
 ### My other repositories for MPPT data management
 #### VE Direct MPPT data reader
-Visit this repository if you are looking for a ve-direct protocol registration into a file (in this case, a .xls file)
+Visit this repository if you are looking for a ve-direct protocol registration into a file (in this case, in a .xls file)
 
  - [[Github] VE.Direct MPPT reader](https://github.com/AaronPB/vemppt_reader)
 
