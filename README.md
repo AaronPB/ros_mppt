@@ -65,7 +65,7 @@ Depending on the interested values from the serial communication interface, it i
 ## Documentation
 ### MPPT ROS WIKI
 
- - [[WIKI] ros_mppt](http://wiki.ros.org/ros_mppt)
+ - [[ROS org] ros_mppt](http://wiki.ros.org/ros_mppt)
 
 ### My other repositories for MPPT data management
 #### VE Direct MPPT data reader
